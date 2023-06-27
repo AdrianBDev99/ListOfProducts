@@ -61,6 +61,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088D9EB82A4B7F8100F21D2F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08AF08A72A326C4400F1237B /* AddProducts */,
+				08AF089A2A31944100F1237B /* MyProducts */,
+				08AF08982A31941500F1237B /* MyList */,
+				08D6B8C32A34133A00E28C4E /* AddListUnitAmount */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		08AF086A2A315E9A00F1237B = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +92,11 @@
 		08AF08752A315E9A00F1237B /* ListOfProducts */ = {
 			isa = PBXGroup;
 			children = (
-				08AF08A72A326C4400F1237B /* AddProducts */,
+				088D9EB82A4B7F8100F21D2F /* Controllers */,
 				08AF089F2A31949D00F1237B /* Extensions */,
-				08AF089E2A31948700F1237B /* Network */,
 				08AF089D2A31947C00F1237B /* Models */,
 				08AF089C2A31946700F1237B /* Views */,
 				08AF089B2A31945100F1237B /* Application */,
-				08AF089A2A31944100F1237B /* MyProducts */,
-				08AF08982A31941500F1237B /* MyList */,
-				08D6B8C32A34133A00E28C4E /* AddListUnidad&Cantidad */,
 				08AF08B52A32C8F700F1237B /* CoreData */,
 				08AF08812A315E9F00F1237B /* LaunchScreen.storyboard */,
 				08AF087F2A315E9F00F1237B /* Assets.xcassets */,
@@ -139,13 +146,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		08AF089E2A31948700F1237B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		08AF089F2A31949D00F1237B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,12 +175,12 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		08D6B8C32A34133A00E28C4E /* AddListUnidad&Cantidad */ = {
+		08D6B8C32A34133A00E28C4E /* AddListUnitAmount */ = {
 			isa = PBXGroup;
 			children = (
 				0820D9DA2A37C31A005CED24 /* AddToListViewController.swift */,
 			);
-			path = "AddListUnidad&Cantidad";
+			path = AddListUnitAmount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

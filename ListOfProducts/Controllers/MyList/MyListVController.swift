@@ -134,16 +134,6 @@ class MyListVController: UITableViewController {
         
         return cell
         
-        /*let deleteAction = UIContextualAction(style: .destructive, title: nil) { _, _, complete in
-            AppDelegate.sharedAppDelegate.coreDataStack.managedContext.delete(self.listProduct[indexPath.row])
-            self.listProduct.remove(at: indexPath.row)
-            
-            AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
-            
-            self.TableViewList.deleteRows(at: [indexPath], with: .automatic)
-            complete(true)
-        }*/
-        
     }
     
     
