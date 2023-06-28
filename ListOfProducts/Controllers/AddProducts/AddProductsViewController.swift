@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import FirebaseAnalytics
 
 class AddProductsViewController: UIViewController {
     
@@ -33,8 +34,18 @@ class AddProductsViewController: UIViewController {
             Cantidad.isHidden = true
         
     }
+    
+    
+    
+    
     func saveProduct(name:String, unit: String, quantity: Double, isOnSwitch: Bool){
         let manageContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
+        
+        Analytics.logEvent("add_Products", parameters: [
+          "name": "\(name)",
+          "unit": "\(unit)"
+        ])
+        
         let productCD = Product(context: manageContext)
         productCD.setValue(name, forKey: #keyPath(Product.nombre))
         productCD.setValue(unit, forKey: #keyPath(Product.unidad))
@@ -46,6 +57,8 @@ class AddProductsViewController: UIViewController {
             addToList(product: productCD)
             let itemProduct = ProductList (context: manageContext)
             itemProduct.addToProducts(productCD)
+            
+            
         }
 
             
